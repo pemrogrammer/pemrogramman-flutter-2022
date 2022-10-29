@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-import '../custom_widgets/button_plus.dart';
+import '../custom_widgets/custom_button.dart';
 
-class MyHomePage extends StatefulWidget {
+class CounterScreen extends StatefulWidget {
   final String title;
 
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const CounterScreen({Key? key, required this.title}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<CounterScreen> createState() => _CounterScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _CounterScreenState extends State<CounterScreen> {
   int _counter = 0;
 
   void _incrementCounter({int? setValue}) {
@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WELCOME APP'),
+        title: const Text('COUNTER PAGE'),
       ),
       body: Column(
         children: [
